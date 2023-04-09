@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".adminActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Item"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:id="@+id/addietmtext"
+        android:textSize="28sp"
+        />
+
+    <ImageView
+        android:id="@+id/addTheImage"
+        android:layout_width="371dp"
+        android:layout_height="275dp"
+        android:layout_below="@+id/addietmtext"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shoe6" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addTheImage"
+        android:hint="Item Name"
+        android:textColorHint="@color/mainpagebuttoncolors"
+        android:id="@+id/itemName"
+        android:layout_marginTop="23dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/itemName"
+        android:hint="Item Price"
+        android:textColorHint="@color/mainpagebuttoncolors"
+
+        android:id="@+id/itemPrice"
+        android:inputType="number"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        />
+
+
+    <Button
+        android:id="@+id/additem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/itemPrice"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/mainpagebuttons"
+        android:layout_marginBottom="15dp"
+        android:text="Add Item"
+        android:textAllCaps="false" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/notificationMessage"
+        android:layout_below="@+id/additem"
+        android:hint="Notification message"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:textColorHint="@color/mainpagebuttoncolors"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/notificationMessage"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:text="Send notification"
+        android:id="@+id/sendNotification"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/mainpagebuttons"
+
+        />
+
+
+
+
+
+
+
+</RelativeLayout>
